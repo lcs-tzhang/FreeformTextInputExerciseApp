@@ -48,20 +48,27 @@ struct DivisionView: View {
                     
                 }
                 Spacer()
-                
-                Text("\(quotient)")
-                    .font(.system(size: 96))
-                    .frame(maxWidth: .infinity, alignment: .trailing)
-                    .padding(.trailing)
-                    .padding()
-                
-                Spacer()
-                
-                Text("\(remainder)")
-                    .font(.system(size: 96))
-                    .frame(maxWidth: .infinity, alignment: .trailing)
-                    .padding(.trailing)
-                    .padding()
+                if let division = viewModel.division{
+                    
+                    Text("quotient: \(division.quotient)")
+                        .font(.system(size: 96))
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .padding(.trailing)
+                        .padding()
+                    
+                    Spacer()
+                    
+                    Text("\(String(describing: remainder))")
+                        .font(.system(size: 96))
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .padding(.trailing)
+                        .padding()
+                }else{
+                    Text(viewModel.recoverySuggestion)
+                        .font(.system(size:24))
+                        .foregroundColor(.red)
+                        .padding()
+                }
             }
             .padding()
         }

@@ -23,10 +23,8 @@ struct DivisionView: View {
                     Text("select first number")
                         .font(.headline)
                     HStack {
-                        Text("\(firstNumber)")
-                            .font(.system(size: 64))
-                        Spacer()
-                        Stepper("", value: $firstNumber)
+                        TextField("Dividend", text: $viewModel.providedDividend)
+                            .textFieldStyle(.roundedBorder)
                     }
                 }
                 
@@ -40,28 +38,29 @@ struct DivisionView: View {
                     Text("select second number")
                         .font(.headline)
                     HStack {
-                        Text("\(secondNumber)")
-                            .font(.system(size: 64))
-                        Spacer()
-                        Stepper("", value: $secondNumber)
+                        TextField("Divisor", text: $viewModel.providedDivisor)
+                            .textFieldStyle(.roundedBorder)
                     }
                     
                 }
                 Spacer()
                 if let division = viewModel.division{
                     
+                 
                     Text("quotient: \(division.quotient)")
-                        .font(.system(size: 96))
-                        .frame(maxWidth: .infinity, alignment: .trailing)
-                        .padding(.trailing)
+                        .font(.system(size: 40))
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .padding()
+                        .padding()
                         .padding()
                     
                     Spacer()
                     
-                    Text("\(String(describing: remainder))")
-                        .font(.system(size: 96))
-                        .frame(maxWidth: .infinity, alignment: .trailing)
-                        .padding(.trailing)
+                    Text("Remainder: \(division.remainder)")
+                        .font(.system(size: 40))
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .padding()
+                        .padding()
                         .padding()
                 }else{
                     Text(viewModel.recoverySuggestion)
@@ -71,8 +70,9 @@ struct DivisionView: View {
                 }
             }
             .padding()
-        }
+      
     }
+}
 
 #Preview {
     DivisionView()

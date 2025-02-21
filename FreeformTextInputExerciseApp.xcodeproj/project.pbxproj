@@ -6,17 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		517500432D69057C00CCB0D3 /* FreeformTextInputExerciseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeformTextInputExerciseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		517500762D69089400CCB0D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5175006E2D69089400CCB0D3 /* Assets.xcassets */; };
+		517500772D69089400CCB0D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5175006F2D69089400CCB0D3 /* Preview Assets.xcassets */; };
+		517500782D69089400CCB0D3 /* FreeformTextInputExerciseAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517500722D69089400CCB0D3 /* FreeformTextInputExerciseAppApp.swift */; };
+		517500792D69089400CCB0D3 /* DivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517500742D69089400CCB0D3 /* DivisionView.swift */; };
+		5175007B2D69092D00CCB0D3 /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175007A2D69092D00CCB0D3 /* Division.swift */; };
+		5175007D2D69097900CCB0D3 /* DivisionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175007C2D69097900CCB0D3 /* DivisionViewModel.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		517500452D69057C00CCB0D3 /* FreeformTextInputExerciseApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FreeformTextInputExerciseApp;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		5175006C2D69089400CCB0D3 /* FreeformTextInputExerciseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = FreeformTextInputExerciseApp.app; path = "/Users/xinyuzhang/Desktop/11 CS-pre/FreeformTextInputExerciseApp/build/Debug-iphoneos/FreeformTextInputExerciseApp.app"; sourceTree = "<absolute>"; };
+		5175006E2D69089400CCB0D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5175006F2D69089400CCB0D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		517500722D69089400CCB0D3 /* FreeformTextInputExerciseAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeformTextInputExerciseAppApp.swift; sourceTree = "<group>"; };
+		517500742D69089400CCB0D3 /* DivisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionView.swift; sourceTree = "<group>"; };
+		5175007A2D69092D00CCB0D3 /* Division.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
+		5175007C2D69097900CCB0D3 /* DivisionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		517500402D69057C00CCB0D3 /* Frameworks */ = {
@@ -32,17 +39,53 @@
 		5175003A2D69057C00CCB0D3 = {
 			isa = PBXGroup;
 			children = (
-				517500452D69057C00CCB0D3 /* FreeformTextInputExerciseApp */,
-				517500442D69057C00CCB0D3 /* Products */,
+				517500752D69089400CCB0D3 /* FreeformTextInputExerciseApp */,
 			);
 			sourceTree = "<group>";
 		};
-		517500442D69057C00CCB0D3 /* Products */ = {
+		5175006D2D69089400CCB0D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				517500432D69057C00CCB0D3 /* FreeformTextInputExerciseApp.app */,
+				5175007A2D69092D00CCB0D3 /* Division.swift */,
 			);
-			name = Products;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		517500702D69089400CCB0D3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5175006E2D69089400CCB0D3 /* Assets.xcassets */,
+				5175006F2D69089400CCB0D3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		517500712D69089400CCB0D3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5175007C2D69097900CCB0D3 /* DivisionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		517500732D69089400CCB0D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				517500742D69089400CCB0D3 /* DivisionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		517500752D69089400CCB0D3 /* FreeformTextInputExerciseApp */ = {
+			isa = PBXGroup;
+			children = (
+				517500722D69089400CCB0D3 /* FreeformTextInputExerciseAppApp.swift */,
+				5175006D2D69089400CCB0D3 /* Model */,
+				517500712D69089400CCB0D3 /* ViewModels */,
+				517500732D69089400CCB0D3 /* Views */,
+				517500702D69089400CCB0D3 /* Preview Content */,
+			);
+			path = FreeformTextInputExerciseApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,14 +103,11 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				517500452D69057C00CCB0D3 /* FreeformTextInputExerciseApp */,
-			);
 			name = FreeformTextInputExerciseApp;
 			packageProductDependencies = (
 			);
 			productName = FreeformTextInputExerciseApp;
-			productReference = 517500432D69057C00CCB0D3 /* FreeformTextInputExerciseApp.app */;
+			productReference = 5175006C2D69089400CCB0D3 /* FreeformTextInputExerciseApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -95,7 +135,7 @@
 			mainGroup = 5175003A2D69057C00CCB0D3;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 517500442D69057C00CCB0D3 /* Products */;
+			productRefGroup = 5175003A2D69057C00CCB0D3;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -109,6 +149,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517500762D69089400CCB0D3 /* Assets.xcassets in Resources */,
+				517500772D69089400CCB0D3 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517500782D69089400CCB0D3 /* FreeformTextInputExerciseAppApp.swift in Sources */,
+				517500792D69089400CCB0D3 /* DivisionView.swift in Sources */,
+				5175007B2D69092D00CCB0D3 /* Division.swift in Sources */,
+				5175007D2D69097900CCB0D3 /* DivisionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
